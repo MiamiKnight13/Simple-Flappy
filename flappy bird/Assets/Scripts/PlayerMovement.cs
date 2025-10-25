@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetMouseButton(0) == true)
+        if(Input.GetMouseButtonDown(0) == true)
         {
             Rigidbody.linearVelocity = Vector2.up * _force;
         }
