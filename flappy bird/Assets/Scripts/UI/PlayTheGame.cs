@@ -7,4 +7,9 @@ public class PlayTheGame : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerDeath : MonoBehaviour
 {
+    public GameObject DeathAS;
     public GameObject loseTitle;
     public ScoreText ScoreText;
     public SaveSys SaveSys;
@@ -9,6 +10,7 @@ public class PlayerDeath : MonoBehaviour
     {
         if (collision.gameObject.tag == "Obstacle")
         {
+            DeathAS.SetActive(true); 
             Debug.Log("Unfortunately, you lose");
             Destroy(gameObject);
 
